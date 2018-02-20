@@ -1,0 +1,50 @@
+.unary-clock-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 
+      [hour one] 1fr 
+      [hour two] 1fr  
+      [minute one] 1fr 
+      [minute two] 1fr
+      [second one] 1fr 
+      [second two] 1fr;
+    justify-items: start;
+    align-content: start;
+    margin: 10px;
+    grid-gap: 2em;
+  }
+  
+  .main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 6px;
+    align-content: start;
+    perspective: 200px;
+  }
+  
+  .main-grid-square {
+    background: hsla(0, 0%, 100%, .05);
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+    transform: scale(.8,.8);
+    transition: background 100ms ease 150ms, box-shadow 100ms ease 150ms, transform 600ms ease;
+  }
+  
+  .hoursActive {
+    background: hsl(350, 71%, 58%);
+    box-shadow: 0 0 30px 0 hsla(350, 71%, 38%, 1);
+    transform: scale(1,1);
+  }
+  
+  .minutesActive {
+    background: hsl(253, 85%, 60%);
+    box-shadow: 0 0 30px 0 hsla(253, 85%, 40%, 1);
+    transform: scale(1,1);
+  }
+  
+  .secondsActive {
+    background: hsl(155, 58%, 54%);
+    box-shadow: 0 0 30px 0 hsla(155, 58%, 44%, 1);
+    transform: scale(1,1);
+  }
