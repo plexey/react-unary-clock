@@ -24,7 +24,7 @@
   
   .main-grid-square {
     background: hsla(0, 0%, 100%, .05);
-    border-radius: 50%;
+    border-radius: 0%;
     width: 4vh;
     height: 4vh;
     transform: scale(.8,.8);
